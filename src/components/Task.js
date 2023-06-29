@@ -21,13 +21,14 @@ export default function Task({
           aria-label={`archiveTask-${id}`}
         />
       </label>
+
       <div className="title">
         <input
           type="text"
           value={title}
           readOnly={true}
           placeholder="Input title"
-          style={{ background: "red" }}
+          style={{ textOverflow: "ellipsis" }}
         />
       </div>
 
